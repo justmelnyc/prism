@@ -1,7 +1,9 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core'
+import { CommonModule } from '@angular/common'
 
-import { LoadingSpinnerComponent } from '../ui/loading-spinner/loading-spinner.component';
+
+import {HomeComponent, PrismComponent} from '../home'
+import { LoadingSpinnerComponent } from '../ui/loading-spinner/loading-spinner.component'
 
 
 @NgModule({
@@ -9,10 +11,13 @@ import { LoadingSpinnerComponent } from '../ui/loading-spinner/loading-spinner.c
     CommonModule,
   ],
   declarations: [
+    HomeComponent,
+    PrismComponent,
     LoadingSpinnerComponent
   ],
   exports: [
-    LoadingSpinnerComponent
+    LoadingSpinnerComponent,
+    PrismComponent
   ]
 })
 export class SharedModule { }

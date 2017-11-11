@@ -12,7 +12,8 @@ import { UserLoginComponent } from '../user-login/user-login.component';
 import { UserProfileComponent } from '../user-profile/user-profile.component';
 import { UserFormComponent } from '../user-form/user-form.component';
 import { TopNavComponent } from '../top-nav/top-nav.component';
-import { FooterNavComponent } from '../footer-nav/footer-nav.component';
+import { FootComponent } from '../footer/footer'
+import { TopComponent } from '../header/header'
 import { ReadmePageComponent } from '../readme-page/readme-page.component';
 
 
@@ -30,13 +31,15 @@ import { ReadmePageComponent } from '../readme-page/readme-page.component';
     UserLoginComponent,
     UserProfileComponent,
     TopNavComponent,
-    FooterNavComponent,
+    FootComponent,
+    TopComponent,
     UserFormComponent,
     ReadmePageComponent
   ],
   exports: [
     TopNavComponent,
-    FooterNavComponent,
+    TopComponent,
+    FootComponent,
     UserProfileComponent,
   ]
 })
